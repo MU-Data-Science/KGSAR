@@ -10,7 +10,7 @@ body {
 @font-face {
   font-family: "Spanish1";
   src: url('../font/Spanish-DeCray.ttf') format('truetype');
-  font-display: optional;
+  font-display: auto;
 }
 #container {
   margin: 100px auto;

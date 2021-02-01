@@ -58,11 +58,14 @@ body {
 #img-div {
   align-self: center;
 }
-#img-div > img {
+#img-id {
   width: 170px;
   height: 100px;
-  padding: 15px;
-  padding-top: 25px;
+  align-self: center;
+}
+.imageColumn {
+  float: left;
+  padding: 10px;
 }
 button {
   float: left;

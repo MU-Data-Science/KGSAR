@@ -8,8 +8,10 @@ This virtual keyboard will work on your browser, even if the font has not been i
 
 1. Install the .ttf file by cloning this repository or downloading from [here](https://github.com/MU-Data-Science/KGSAR/blob/main/font/Spanish-DeCray.ttf).
 2. Navigate to the folder where the .ttf has been cloned or downloaded.
-3. Double click on the .ttf file and click on "Install Font".
+3. Double click on the .ttf file and click on "Install Font" (shown in the image below).
+![](docs/static/install.png) 
 
 The font installation is now complete!
 
 To verify, in your Font Book, find and ensure the tick box is highlighted in blue color.
+![](docs/static/verify.png)    

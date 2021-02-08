@@ -67,7 +67,7 @@ function generate() {
 					new docx.TextRun({
 						text: x,
 						font: {
-											name: "Spanish1",
+											name: "Nicolas De Valdivia Y Brizuela",
 									},
 					}),
 				],

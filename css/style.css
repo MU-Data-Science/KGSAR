@@ -8,8 +8,8 @@ body {
   font-family: sans-serif;
 }
 @font-face {
-  font-family: "Spanish1";
-  src: url('../font/Spanish-DeCray.ttf') format('truetype');
+  font-family: "Nicolas De Valdivia Y Brizuela";
+  src: url('../font/NicolasDeValdiviaYBrizuela-Regular.ttf') format('truetype');
   font-display: auto;
 }
 #container {
@@ -23,8 +23,8 @@ body {
   padding: 5px;
   width: 671px;
   height: 200px;
-  font: "Spanish1 Regular";
-  font-family: "Spanish1";
+  font: "Nicolas De Valdivia Y Brizuela Regular";
+  font-family: "Nicolas De Valdivia Y Brizuela";
   font-size: 14px;
   background: #fff;
   border: 1px solid #f9f9f9;
@@ -37,7 +37,7 @@ body {
   list-style: none;
 }
 .harlow {
-  font-family: "Spanish1";
+  font-family: "Nicolas De Valdivia Y Brizuela";
 }
 #flex {
   border: none;
@@ -78,7 +78,7 @@ button {
   background: #fff;
   border: 1px solid #f9f9f9;
   -moz-border-radius: 5px;
-  font-family: "Spanish1";
+  font-family: "Nicolas De Valdivia Y Brizuela";
   -webkit-border-radius: 5px;
 }
 button:hover {
@@ -98,7 +98,7 @@ button:hover {
   background: #fff;
   border: 1px solid #f9f9f9;
   -moz-border-radius: 5px;
-  font-family: "Spanish1";
+  font-family: "Nicolas De Valdivia Y Brizuela";
   -webkit-border-radius: 5px;
   /* border-radius: 75%; */
   box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;

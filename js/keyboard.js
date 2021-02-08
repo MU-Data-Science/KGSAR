@@ -10,7 +10,7 @@ $(function(){
 
 		// Shift keys
 		if ($this.hasClass('left-shift') || $this.hasClass('right-shift')) {
-			// $('.letter').toggleClass('uppercase');
+			$('.letter').toggleClass('uppercase');
 			$('.symbol span').toggle();
 
 			shift = (shift === true) ? false : true;

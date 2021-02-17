@@ -12,6 +12,37 @@ body {
   src: url('../font/NicolasDeValdiviaYBrizuela-Regular.ttf') format('truetype');
   font-display: auto;
 }
+.header-logo {
+  width: 1227px;
+  height: 56px;
+}
+.pagelogo {
+  display: inline-block;
+  max-height: 56px;
+  max-width: 225px;
+  padding: 8px 4px 8px 12px;
+  vertical-align: middle;
+}
+.header-text {
+  display: inline-block;
+  line-height: 1;
+  max-width: 380px;
+  outline: none;
+  overflow: hidden;
+  padding: 16px 12px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+  line-height: 1.333;
+}
+.header-bkg {
+  background-size: cover;
+  background-image: url('https://lh6.googleusercontent.com/fj3x6sPo3D_KBGwu5qk_UuwOJSDxpZrc8B-iFcCP5AZmjpbbeL7WFIiEeOz6DXMtw4In2lVw=w16383');
+  /* transform: translate3d(0px, 0px, 0px);
+  background-position: center center; */
+}
 #container {
   margin: 100px auto;
   margin-bottom: inherit;
@@ -25,7 +56,7 @@ body {
   height: 200px;
   font: "Nicolas De Valdivia Y Brizuela Regular";
   font-family: "Nicolas De Valdivia Y Brizuela";
-  font-size: 14px;
+  font-size: 18px;
   background: #fff;
   border: 1px solid #f9f9f9;
   -moz-border-radius: 5px;

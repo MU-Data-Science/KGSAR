@@ -80,6 +80,28 @@ body {
   -webkit-flex-flow: column;
   flex-flow: column;
 }
+.aboutkeyboard {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 688px;
+  align-self: center;
+  text-align: justify;
+}
+.aboutnotary {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 688px;
+  align-self: center;
+  text-align: justify;
+}
+#notary-signature {
+  float: left;
+  width: 170px;
+  height: 100px;
+  align-self: center;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
 #grantLang-div {
   align-self: center;
   text-align: center;

@@ -5,7 +5,8 @@
 body {
   background: #eee;
   background-color: #EDEAE3;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: Merriweather;
 }
 @font-face {
   font-family: "Nicolas De Valdivia Y Brizuela";
@@ -44,9 +45,10 @@ body {
   background-position: center center; */
 }
 #container {
-  margin: 100px auto;
+  margin: 50px auto;
   margin-bottom: inherit;
-  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 688px;
 }
 #write {
@@ -82,7 +84,7 @@ body {
 }
 .aboutkeyboard {
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   width: 688px;
   align-self: center;
   text-align: justify;

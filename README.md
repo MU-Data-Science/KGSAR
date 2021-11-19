@@ -18,7 +18,7 @@ To verify, in your Font Book, find and ensure the tick box is highlighted in blu
 ![](docs/static/verify.png)    
 
 # Docker:
-1. Install [Docker] (https://docs.docker.com/get-docker/).
+1. Install [Docker](https://docs.docker.com/get-docker/).
 2. Start Docker Desktop.
 3. Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
 As of 11/19/2021, the latest tag is of the name 'test2'.

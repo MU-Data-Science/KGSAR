@@ -21,8 +21,7 @@ To verify, in your Font Book, find and ensure the tick box is highlighted in blu
 1. Install [Docker](https://docs.docker.com/get-docker/).
 2. Start Docker Desktop.
 3. Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
-As of 11/19/2021, the latest tag is of the name 'test2'.
+As of 11/19/2021, the latest tag is of the name 'kgsar'.
 4. Hover over the image and click on 'PULL'.
 5. Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'.
-6. Open your browser and type "http://localhost:10010". 
-- If the port is already in use, please set another port under 'Optional Settings" before running the image. 
+6. Open your browser and type "http://localhost:5001". 

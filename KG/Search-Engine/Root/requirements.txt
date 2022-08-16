@@ -1,0 +1,8 @@
+fuzzywuzzy
+flask
+flask-cors
+flask-restful
+pymantic
+pillow
+numpy
+pandas

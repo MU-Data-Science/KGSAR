@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
+  </head>
+
+  <body ng-app = 'selectDemoBasic'>
+    <div class="navbar navbar-default floating-menu">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="https://sites.google.com/view/kg-spanish-american-notary/home"> <i class="fa fa-home fa-1x"></i> Home</a>
+        </li>
+      </ul>
+    </div>
+
+    <md-card>
+      <img ng-src="static/title.png" class="md-card-image" alt="KGSAR" id="header_img" style="height:130px; width:100%;">
+    </md-card>
+
+    <div ng-controller="AppCtrl as ctrl" ng-cloak layout="column">
+      <md-card>
+        <md-card-content style="height: 90px;">
+          <div layout="row" layout-align="center start" style="font-size:18px;">
+            <md-input-container>
+              <label></label>
+              <input type="text" ng-model="ctrl.searchWord" placeholder="Type word here" size="50">
+            </md-input-container>
+
+            <md-input-container>
+              <md-select placeholder="Number of results" ng-model="ctrl.displayResults">
+                <md-option ng-repeat="num in ctrl.displayOptions" ng-value="num.abbrev" ng-selected="$first">
+                  [[num.abbrev]]
+                </md-option>
+              </md-select>
+            </md-input-container>
+            <div id='buttons-div'>
+              <md-input-container>
+                <div class="example-button-row">
+                  <button mat-stroked-button ng-click='ctrl.getData(ctrl)'>Search</button>
+                  <button id="correct" mat-stroked-button ng-click='ctrl.corrections(ctrl)' disabled='true'>Annotate</button>
+                </div>
+              </md-input-container>
+            </div>
+          </div>
+        </md-card-content>
+
+        <md-card-title hidden="true">
+          <md-card-title-text>
+            <span class="md-headline">Results</span>
+          </md-card-title-text>
+        </md-card-title>
+
+        <md-card-content ng-show="ctrl.showCarousel">
+          <div ng-show="ctrl.loadingData" class="centered">
+          <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+          </div>
+          <div ng-hide="ctrl.loadingData">
+            <div>
+              <uib-carousel  active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                  <img ng-src="data:image/jpg;base64,[[slide.image]]" class="main-image" id="img[[slide.id]]" loading="lazy" ng-mouseover="ctrl.zoomImage([[slide.id]], true)" ng-mouseout="ctrl.zoomImage([[slide.id]], false)">
+                  <div class="carousel-caption" style="color:#FF0000">
+                    <h4>[[slide.path]]</h4>
+                  </div>
+
+                </uib-slide>
+              </uib-carousel>
+            </div>
+          </div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+  </body>
+</html>

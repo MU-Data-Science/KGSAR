@@ -11,7 +11,7 @@ echo "Docker Engine is now running!"
 echo "Logging into the private repository if this message is shown."
 echo "Please enter Docker login password."
 docker login --username=shivikaprasannamu
-echo "Starting SMTP"
+echo "Starting SMTP.."
 echo "Please enter the password you use to log into your machine."
 sudo postfix start
 echo "Pulling image from Docker"

@@ -35,6 +35,6 @@ As of 11/19/2021, the latest tag is of the name 'kgsar'.
 # Team
 Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, UMKC)
 
-Current Ph.D students - Shivika Prasanna, Nouf Alrasheed
+Current Ph.D students - Shivika Prasanna (MU), Nouf Alrasheed (UMKC)
 
-Past M.S. students - Parshad Suthar, Pooja Purushatma
+Past M.S. students - Parshad Suthar (MU), Pooja Purushatma (MU)

@@ -2,7 +2,7 @@
 
 # Keyboard:
 # Acknowledgments
-This work was supported by the National Endowments for the Humanities Grant No. [HAA-271747-20](https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-271747-20).
+This work was supported by the National Endowments for the Humanities Grant No. [HAA-271747-20](https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-271747-20) and a [Research and Creative Works Strategic Investment Tier 3 Award from the University of Missouri System](https://www.umsystem.edu/president-blog/strategic-plan-research-investments).
 
 # Installing font locally
 This virtual keyboard will work on your browser, even if the font has not been installed locally. To be able to work offline with this, please follow the instructions below.

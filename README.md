@@ -31,3 +31,10 @@ As of 11/19/2021, the latest tag is of the name 'kgsar'.
 1. Shivika Prasanna, Nouf Alrasheed, Parshad Suthar, Pooja Purushatma, Praveen Rao and Viviana Grieco - KGSAR: A Knowledge Graph-Based Tool for Managing Spanish Colonial Notary Records. In the 21st International Semantic Web Conference (ISWC 2022), 4 pages, China, 2022. (demo, to appear)
 2. Nouf Alrasheed, Praveen Rao, and Viviana Grieco - Character Recognition of Seventeenth-Century Spanish American Notary Records Using Deep Learning. In Digital Humanities Quarterly (DHQ) Journal, Vol. 15, No. 4, 16 pages,  2021.
 3. Nouf Alrasheed, Shivika Prasanna, Ryan Rowland, Praveen Rao, Viviana Grieco, and Martin Wasserman - Evaluation of Deep Learning Techniques for Content Extraction in Spanish Colonial Notary Records. In 3rd Workshop on Structuring and Understanding of Multimedia Heritage Contents (SUMAC), co-located with ACM Multimedia 2021, pages 23-30, 2021.
+
+# Team
+Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, MU)
+
+Current Ph.D students - Shivika Prasanna, Nouf Alrasheed
+
+Past M.S. students - Parshad Suthar, Pooja Purushatma

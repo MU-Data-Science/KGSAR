@@ -33,7 +33,7 @@ As of 11/19/2021, the latest tag is of the name 'kgsar'.
 3. Nouf Alrasheed, Shivika Prasanna, Ryan Rowland, Praveen Rao, Viviana Grieco, and Martin Wasserman - Evaluation of Deep Learning Techniques for Content Extraction in Spanish Colonial Notary Records. In 3rd Workshop on Structuring and Understanding of Multimedia Heritage Contents (SUMAC), co-located with ACM Multimedia 2021, pages 23-30, 2021.
 
 # Team
-Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, MU)
+Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, UMKC)
 
 Current Ph.D students - Shivika Prasanna, Nouf Alrasheed
 

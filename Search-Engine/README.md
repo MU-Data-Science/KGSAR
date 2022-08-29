@@ -21,14 +21,15 @@ Step 1:
     Add the local paths for the images and turtles to [kgsar.py](/Search-Engine/Root/website/kgsar.py).
 
 Step 2:
-    Download the images from OneDrive (please request Dr. Praveen Rao for access) and add them to a folder under [Root](/Search-Engine/Root/). Add the [turtle](/KG/Turtles/) files to another folder under Root.
+    Download the images from OneDrive (please request Dr. Praveen Rao for access) and add them to a folder under [Root](/Search-Engine/Root/). <br/> 
+    Add the [turtle](/KG/Turtles/) files to another folder under Root.
 
 Step 3:
-    **a.** In [RWStore.properties](/Search-Engine/Root/website/RWStore.properties), change the path in line 11, to the local path where the Blazegraph jar file is stored. <br />
-    **b.** In [run.sh](/Search-Engine/Root/website/run.sh), change the argument paths in line 7 to the local paths set in Step 1.
+    In [RWStore.properties](/Search-Engine/Root/website/RWStore.properties), change the path in line 11, to the local path where the Blazegraph jar file is stored. <br />
+    In [run.sh](/Search-Engine/Root/website/run.sh), change the argument paths in line 7 to the local paths set in Step 1.
 
 Step 4:
-    **a.** Run the blazegraph jar followed by [kgsar.py](/Search-Engine/Root/website/kgsar.py).
+    Run the blazegraph jar followed by [kgsar.py](/Search-Engine/Root/website/kgsar.py).
 
         $ java -server -Xmx4g -jar /path/to/blazegraph.jar
         $ python3 /website/kgsar.py -t /root/directory/for/ttlfiles -r /cleaned/images/root/directory

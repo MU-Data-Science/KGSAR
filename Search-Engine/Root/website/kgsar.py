@@ -52,8 +52,8 @@ ttl_folder = str(args['ttl'])
 root = str(args['root'])
 
 # uncomment below to use locally
-root = "/Users/shivikaprasanna/Downloads/Root/SubImages"
-ttl_folder = "/Users/shivikaprasanna/Downloads/Root/SubTurtles"
+# root = "/path/to/images"
+# ttl_folder = "/path/to/turtles"
 
 # Print all versions here
 print("Python: ", sys.version)
@@ -64,7 +64,9 @@ app = Flask(__name__)
 api = Api(app)
 CORS(app)
 
-server = sparql.SPARQLServer('http://localhost:9999/blazegraph/sparql')
+bg_address = '0.0.0.0'
+
+server = sparql.SPARQLServer(f"http://{bg_address}:9999/blazegraph/sparql")
 
 print("Copy http://localhost:5001 (check Docker Desktop for Port#) and paste it in your browser to start querying. \n Happy searching!")
 
@@ -172,10 +174,11 @@ def index():
         data_loaded = 1
     return render_template('index.html')
 
+# Utility function if load() doesnt successfully update Blazegraph
 @app.route('/load')
 def load_kg():
     # Loading data to Blazegraph
-    server = sparql.SPARQLServer('http://localhost:9999/blazegraph/sparql')
+    server = sparql.SPARQLServer(f"http://{bg_address}:9999/blazegraph/sparql")
     
     print("inside load_kg!")
     print("ttl_folder", ttl_folder)
@@ -223,4 +226,4 @@ def addAnnotations():
     return data
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5001,debug=True)
+    app.run(host='0.0.0.0', port=5001)

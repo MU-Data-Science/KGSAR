@@ -15,21 +15,22 @@ import argparse
 import matplotlib.pyplot as pyplot
 import keras_ocr
 
-import cleanImage
+# UNCOMMENT THE FOLLOWING SECTION IF USING THIS AS A STAND-ALONE CODE.
+# import cleanImage
 
-ap = argparse.ArgumentParser()
-ap.add_argument("-m", "--model", required=True, help="model path")
-ap.add_argument("-i", "--input", required=True, help="input path")
-ap.add_argument("-o", "--output", required=True, help="output path")
-ap.add_argument("-j", "--json", required=True, help="output json path")
-args = vars(ap.parse_args())
+# ap = argparse.ArgumentParser()
+# ap.add_argument("-m", "--model", required=True, help="model path")
+# ap.add_argument("-i", "--input", required=True, help="input path")
+# ap.add_argument("-o", "--output", required=True, help="output path")
+# ap.add_argument("-j", "--json", required=True, help="output json path")
+# args = vars(ap.parse_args())
 
-model_path = str(args["model"])
-image_input_path = str(args["input"])
-image_output_path = str(args["output"])
-json_output_path = str(args["json"])
+# model_path = str(args["model"])
+# image_input_path = str(args["input"])
+# image_output_path = str(args["output"])
+# json_output_path = str(args["json"])
 
-cleanImage.clean(image_input_path, image_output_path)
+# cleanImage.clean(image_input_path, image_output_path)
 
 def predict(model_path, image_output_path, json_output_path):
     
@@ -66,4 +67,5 @@ def predict(model_path, image_output_path, json_output_path):
 
     print("Done predicting!")
 
-predict(model_path, image_output_path, json_output_path)
+# UNCOMMENT THE FOLLOWING SECTION IF USING THIS AS A STAND-ALONE CODE.
+# predict(model_path, image_output_path, json_output_path)

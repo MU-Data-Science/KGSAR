@@ -23,18 +23,30 @@ The images in this dataset are from the digitized collection of Spanish-American
 The images were first cleaned and denoised. Then, deep learning methods such as Keras-OCR and YOLO-OCR have been applied to generate predictions and bounding boxes. This information, along with the document and page information have been stored as knowledge graphs. The ontology definition can be found in [this](/KG/Turtles/definitions.ttl) file. To run this pipeline, the steps have been mentioned in this [README.md](/KG/README.md). The turtle files generated for the 20,000 images can be found in [this](/KG/Turtles/) directory.
  
 # KGSAR as an Information Retrieval System
+The knowledge graphs were then uploaded into Blazegraph using SPARQL queries. The system allows users to search for a keyword and the query API is then called with the search word. Blazegraph internally performs [FullTextIndex](https://github.com/blazegraph/database/wiki/FullTextSearch), which allows for exact and partial matching. The resulting images with the bounding boxes are then ordered and displayed to the user.
 
+The system also allows users to annotate further on the result images. The user may choose to correct/update a word, add new labels in the image or simply delete an incorrect prediction. These are then emailed to us and this allows us to do further retraining on our models for better, more accurate predictions.
 
+There are multiple ways this tool can be accessed.
 
-## Docker
+## Docker Image
+1. Clone this repository and navigate to the 'Search Engine' [folder](/Search-Engine/).
+2. Run [run-kgsar.sh](/Search-Engine/run-kgsar.sh)
+
+Further execution instructions are available in this [README.md](/Search-Engine/README.md#accessing-using-docker).
+
+## Running on a local system
+
+Clone this repository and make the changes in this [README.md](/Search-Engine/README.md#accessing-the-tool-locally)
+
+## Docker Desktop
 1. Install [Docker](https://docs.docker.com/get-docker/).
 2. Start Docker Desktop.
 3. Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
-As of 11/19/2021, the latest tag is of the name 'kgsar'.
+As of 08/29/2022, the latest tag is of the name 'kgsar_v3'.
 4. Hover over the image and click on 'PULL'.
-5. Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'.
-6. Open your browser and type "http://localhost:5001". 
-
+5. Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
+6. Open your browser and type "http://localhost:5002". 
 
 # Keyboard
 ## Installing font locally
@@ -51,7 +63,7 @@ To verify, in your Font Book, find and ensure the tick box is highlighted in blu
 ![](docs/static/verify.png)  
 
 ## Accessing the Keyboard
-You can directly access the keyboard using this [link](https://mu-data-science.github.io/KGSAR/).
+You can directly access the keyboard using this [link](https://mu-data-science.github.io/KGSAR/). However, to see the font locally in your system after downloading your file from the notepad attached to the keyboard, please install the font as described in the above section.
 
 # Team
 Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, UMKC)

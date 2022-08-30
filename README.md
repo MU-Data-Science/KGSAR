@@ -72,7 +72,7 @@ Current Ph.D students - Shivika Prasanna (MU), Nouf Alrasheed (UMKC)
 
 Past M.S. students - Parshad Suthar (MU), Pooja Purushatma (MU)
 
-Our website can be accessed [here](https://sites.google.com/view/kg-spanish-american-notary/home).
+Our website can be accessed [here](https://www.umkc.edu/mide/NEH-Project/).
 
 # Publications
 1. Shivika Prasanna, Nouf Alrasheed, Parshad Suthar, Pooja Purushatma, Praveen Rao and Viviana Grieco - KGSAR: A Knowledge Graph-Based Tool for Managing Spanish Colonial Notary Records. In the 21st International Semantic Web Conference (ISWC 2022), 4 pages, China, 2022. (demo, to appear)

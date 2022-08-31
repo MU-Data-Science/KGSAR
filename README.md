@@ -24,7 +24,7 @@ The images were first cleaned and denoised. Then, deep learning methods such as 
 
 It is recommended to use Cloudlab for generating knowledge graphs, as the dataset size is large and the computation may take longer. You may signup for a Cloudlab account [here](https://cloudlab.us/signup.php). Once you have setup an account, please follow the steps below.
 
-## Starting an experiment
+## Starting an experiment on Cloudlab
 
 Step 1: After you login, you will be able to see all the existing experiments. If you do not have one already, click on "Experiments" and then "Start experiment".
 

@@ -21,6 +21,58 @@ Apart from the various features our novel system provides, we have also develope
 The images in this dataset are from the digitized collection of Spanish-American notary records from 17th century, available at Archivo General de la República Argentina (National Archives), Buenos Aires. To create our dataset for model training, we extracted characters from the deeds notarized by Don Nicolas de Baldibia y Brisuela who acted as interim notary while serving as alcalde ordinario (city councilman) in the city of Buenos Aires in 1658. 
 
 The images were first cleaned and denoised. Then, deep learning methods such as Keras-OCR and YOLO-OCR have been applied to generate predictions and bounding boxes. This information, along with the document and page information have been stored as knowledge graphs. The ontology definition can be found in [this](/KG/Turtles/definitions.ttl) file. To run this pipeline, the steps have been mentioned in this [README.md](/KG/README.md). The turtle files generated for the 20,000 images can be found in [this](/KG/Turtles/) directory.
+
+It is recommended to use Cloudlab for generating knowledge graphs, as the dataset size is large and the computation may take longer. You may signup for a Cloudlab account [here](https://cloudlab.us/signup.php). Once you have setup an account, please follow the steps below.
+
+## Starting an experiment
+
+Step 1: After you login, you will be able to see all the existing experiments. If you do not have one already, click on "Experiments" and then "Start experiment".
+
+Step 2: Pick a project and select any available resource. You may check the availability by clicking on "Resource Availability".
+
+Step 3: Choose a name for your experiment and number of nodes and click on "Next". You may change the number of hours, however, it is recommended to extend the experiment only if you require the node for longer.
+
+Your experiment will be ready in a few minutes!
+
+## Setting up Conda environment
+
+Step 1: Set a public and private key to be able to successfully SSH into the experiment. Once successful, SSH into the experiment from your terminal for MacOS users and Putty for Windows users. The SSH command is available in the "List View", under "SSH command".
+
+Step 2: Once you are logged in, change the directory to "/mydata" and create a new directory.
+
+    $ cd /mydata
+    $ mkdir kgsar_exp
+
+Step 3: Clone this repository.
+
+    $ git clone https://github.com/MU-Data-Science/KGSAR.git
+
+Step 4: Create and activate a new Conda enviroment with Python version 3.7.3. This version is important as there are library dependencies.
+
+    $ cd /mydata && wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+    $ bash Anaconda3-2022.05-Linux-x86_64.sh -b -p /mydata/anaconda3
+    $ export PATH=/mydata/anaconda3/bin:$PATH
+    $ echo 'export PATH=/mydata/anaconda3/bin:$PATH' >> ~/.profile && . ~/.profile
+    $ conda init
+    $ cd kgsar_exp && conda create -n name_of_enviroment python=3.7.3
+    $ conda activate name_of_environment
+
+Step 5: Install all the required packages.
+
+    $ pip3 install tensorflow==2.4.3 or pip3 install tensorflow==2.6.2
+    $ pip3 install pandas
+    $ pip3 install matplotlib
+    $ pip3 install scipy
+    $ pip3 install sklearn
+    $ pip3 install rdflib
+    $ pip3 install imutils
+    $ pip3 install keras-ocr
+    $ pip3 install openpyxl
+    $ pip3 install --upgrade opencv-python==4.5.4.60
+
+You are now ready to generate knowledge graphs by following the execution instructions in the [README.md](/KG/README.md)!
+
+<b>NOTE:</b> The given instructions have been tested in an enviroment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
  
 # KGSAR as an Information Retrieval System
 The knowledge graphs were then uploaded into Blazegraph using SPARQL queries. The system allows users to search for a keyword and the query API is then called with the search word. Blazegraph internally performs [FullTextIndex](https://github.com/blazegraph/database/wiki/FullTextSearch), which allows for exact and partial matching. The resulting images with the bounding boxes are then ordered and displayed to the user.
@@ -40,21 +92,21 @@ Further execution instructions are available in this [README.md](/Search-Engine/
 Clone this repository and make the changes in this [README.md](/Search-Engine/README.md#accessing-the-tool-locally)
 
 ## Docker Desktop
-1. Install [Docker](https://docs.docker.com/get-docker/).
-2. Start Docker Desktop.
-3. Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
+Step 1: Install [Docker](https://docs.docker.com/get-docker/).
+Step 2: Start Docker Desktop.
+Step 3: Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
 As of 08/29/2022, the latest tag is of the name 'kgsar_v3'.
-4. Hover over the image and click on 'PULL'.
-5. Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
-6. Open your browser and type "http://localhost:5002". 
+Step 4: Hover over the image and click on 'PULL'.
+Step 5: Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
+Step 6: Open your browser and type "http://localhost:5002". 
 
 # Keyboard
 ## Installing font locally
 This virtual keyboard will work on your browser, even if the font has not been installed locally. To be able to work offline with this, please follow the instructions below.
 
-1. Install the .ttf file by cloning this repository or downloading from [here](https://github.com/MU-Data-Science/KGSAR/blob/main/font/NicolasDeValdiviaYBrizuela-Regular.ttf).
-2. Navigate to the folder where the .ttf has been cloned or downloaded.
-3. Double click on the .ttf file and click on "Install Font" (shown in the image below).
+Step 1: Install the .ttf file by cloning this repository or downloading from [here](https://github.com/MU-Data-Science/KGSAR/blob/main/font/NicolasDeValdiviaYBrizuela-Regular.ttf).
+Step 2: Navigate to the folder where the .ttf has been cloned or downloaded.
+Step 3: Double click on the .ttf file and click on "Install Font" (shown in the image below).
 <img src="docs/static/install.png" width="528" height="178">
 
 The font installation is now complete!

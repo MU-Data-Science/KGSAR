@@ -47,14 +47,14 @@ Step 3: Clone this repository.
 
     $ git clone https://github.com/MU-Data-Science/KGSAR.git
 
-Step 4: Create and activate a new Conda enviroment with Python version 3.7.3. This version is important as there are library dependencies.
+Step 4: Create and activate a new Conda environment with Python version 3.7.3. This version is important as there are library dependencies.
 
     $ cd /mydata && wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
     $ bash Anaconda3-2022.05-Linux-x86_64.sh -b -p /mydata/anaconda3
     $ export PATH=/mydata/anaconda3/bin:$PATH
     $ echo 'export PATH=/mydata/anaconda3/bin:$PATH' >> ~/.profile && . ~/.profile
     $ conda init
-    $ cd kgsar_exp && conda create -n name_of_enviroment python=3.7.3
+    $ cd kgsar_exp && conda create -n name_of_environment python=3.7.3
     $ conda activate name_of_environment
 
 Step 5: Install all the required packages.
@@ -72,7 +72,7 @@ Step 5: Install all the required packages.
 
 You are now ready to generate knowledge graphs by following the execution instructions in the [README.md](/KG/README.md)!
 
-<b>NOTE:</b> The given instructions have been tested in an enviroment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
+<b>NOTE:</b> The given instructions have been tested in an environment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
  
 # KGSAR as an Information Retrieval System
 The knowledge graphs were then uploaded into Blazegraph using SPARQL queries. The system allows users to search for a keyword and the query API is then called with the search word. Blazegraph internally performs [FullTextIndex](https://github.com/blazegraph/database/wiki/FullTextSearch), which allows for exact and partial matching. The resulting images with the bounding boxes are then ordered and displayed to the user.

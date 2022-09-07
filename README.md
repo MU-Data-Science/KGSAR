@@ -4,6 +4,8 @@ The goal of this project is to develop an informational retrieval system that ut
 
 Apart from the various features our novel system provides, we have also developed a keyboard that users can use if they are interested in exploring or preparing documents in the handwriting of Baldibia y Brisuela, a 17th century interim notary officer, in the city of Buenos Aires, Argentina, in 1658.
 
+Our collaborative work can also be found on [UMKC-BigDataLab](https://github.com/UMKC-BigDataLab/DeepLearningSpanishAmerican). This includes character and words datasets, and retraining the models.
+
 # Table of Contents
 [Generating Knowledge Graphs](#generating-knowledge-graphs)
 

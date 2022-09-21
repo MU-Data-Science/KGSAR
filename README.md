@@ -70,6 +70,7 @@ Step 5: Install all the required packages.
     $ pip3 install imutils
     $ pip3 install keras-ocr
     $ pip3 install openpyxl
+    $ pip3 install xlrd
     $ pip3 install --upgrade opencv-python==4.5.4.60
 
 You are now ready to generate knowledge graphs by following the execution instructions in the [README.md](/KG/README.md)!

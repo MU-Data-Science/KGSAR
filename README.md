@@ -95,12 +95,18 @@ Further execution instructions are available in this [README.md](/Search-Engine/
 Clone this repository and make the changes in this [README.md](/Search-Engine/README.md#accessing-the-tool-locally)
 
 ## Docker Desktop
+
 Step 1: Install [Docker](https://docs.docker.com/get-docker/).
+
 Step 2: Start Docker Desktop.
+
 Step 3: Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
 As of 08/29/2022, the latest tag is of the name 'kgsar_v3'.
+
 Step 4: Hover over the image and click on 'PULL'.
+
 Step 5: Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
+
 Step 6: Open your browser and type "http://localhost:5002". 
 
 # Keyboard

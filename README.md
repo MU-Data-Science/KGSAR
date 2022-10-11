@@ -73,7 +73,7 @@ Step 5: Install all the required packages.
     $ pip3 install xlrd
     $ pip3 install --upgrade opencv-python==4.5.4.60
 
-You are now ready to generate knowledge graphs by following the execution instructions in the [README.md](/KG/README.md)!
+You are now ready to generate knowledge graphs by following the execution instructions in the [KG-Gen-README.md](/KG/README.md)!
 
 <b>NOTE:</b> The given instructions have been tested in an environment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
  

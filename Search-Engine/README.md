@@ -36,5 +36,11 @@ Step 4:
     
 To use Conda environment, follow the installation requirements in [kgsar.py](/Search-Engine/Root/website/kgsar.py).
 
+If Blazegraph does not automatically load all the turtle files, you can call the following API:
+
+    localhost:5001/load
+
+There are more API utilities available in the code.
+
 ## Contributing Authors:
 **Shivika Prasanna**

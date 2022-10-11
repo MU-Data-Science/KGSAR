@@ -117,6 +117,18 @@ Assuming you have cloned the directory and are inside the Search-Engine folder, 
     $ docker build -t name_of_image .
 ```
 
+Once the docker image is built, you can push the image to your Docker repository using the following:
+
+```
+    $ docker push name_of_repository:tag_name
+```
+
+You can also locally run this image using the following:
+
+```
+    $ docker run name_of_tag -p 5001:5001 -p 9999:9999 
+```
+
 Taken from [Docker Documentation](https://docs.docker.com/engine/reference/commandline/image_build/). 
 
 Disclaimer: All the experiments have been done on Cloudlab and MacOS (version 12.4, M1 chip, 2020).

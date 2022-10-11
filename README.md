@@ -88,11 +88,11 @@ There are multiple ways this tool can be accessed.
 1. Clone this repository and navigate to the 'Search Engine' [folder](/Search-Engine/).
 2. Run [run-kgsar.sh](/Search-Engine/run-kgsar.sh)
 
-Further execution instructions are available in this [README.md](/Search-Engine/README.md#accessing-using-docker).
+Further execution instructions are available in this [Accessing-Docker-README.md](/Search-Engine/README.md#accessing-using-docker).
 
 ## Running on a local system
 
-Clone this repository and make the changes in this [README.md](/Search-Engine/README.md#accessing-the-tool-locally)
+Clone this repository and make the changes in this [Accessing-Tool-Locally-README.md](/Search-Engine/README.md#accessing-the-tool-locally)
 
 ## Docker Desktop
 
@@ -108,6 +108,16 @@ Step 4: Hover over the image and click on 'PULL'.
 Step 5: Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
 
 Step 6: Open your browser and type "http://localhost:5002". 
+
+## Rebuilding a Docker image
+
+Replace or add the turtle files and the images to their respective folders and run the following command:
+
+```
+    $ docker build -t name_of_image .
+```
+
+Disclaimer: All the experiments have been done on Cloudlab and MacOS (version 12.4, M1 chip, 2020).
 
 # Keyboard
 ## Installing font locally

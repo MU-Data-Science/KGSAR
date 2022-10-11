@@ -126,7 +126,7 @@ Once the docker image is built, you can push the image to your Docker repository
 You can also locally run this image using the following:
 
 ```
-    $ docker run name_of_tag -p 5001:5001 -p 9999:9999 
+    $ docker run name_of_tag -p 5002:5002 -p 9999:9999 
 ```
 
 Taken from [Docker Documentation](https://docs.docker.com/engine/reference/commandline/image_build/). 

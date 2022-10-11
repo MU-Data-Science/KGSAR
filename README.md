@@ -117,6 +117,8 @@ Replace or add the turtle files and the images to their respective folders and r
     $ docker build -t name_of_image .
 ```
 
+Taken from [Docker Documentation](https://docs.docker.com/engine/reference/commandline/image_build/). 
+
 Disclaimer: All the experiments have been done on Cloudlab and MacOS (version 12.4, M1 chip, 2020).
 
 # Keyboard

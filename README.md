@@ -7,6 +7,8 @@ Apart from the various features our novel system provides, we have also develope
 Our collaborative work can also be found on [UMKC-BigDataLab](https://github.com/UMKC-BigDataLab/DeepLearningSpanishAmerican). This includes character and words datasets, and retraining the models.
 
 # Table of Contents
+[Tools Required](#tools-required)
+
 [Generating Knowledge Graphs](#generating-knowledge-graphs)
 
 [KGSAR as an Information Retrieval System](#kgsar-as-an-information-retrieval-system)
@@ -18,6 +20,13 @@ Our collaborative work can also be found on [UMKC-BigDataLab](https://github.com
 [Publications](#publications)
 
 [Acknowledgments](#acknowledgments)
+
+# Tools Required
+<ul>
+    <li> Cloudlab
+    <li> Docker (Docker Desktop)
+    <li> Terminal (MacOS - Click on Launchpad -> Others -> click Terminal) or PowerShell (Windows - Click start -> type PowerShell -> click Windows PowerShell)
+</ul>
 
 # Generating Knowledge Graphs
 The images in this dataset are from the digitized collection of Spanish-American notary records from 17th century, available at Archivo General de la República Argentina (National Archives), Buenos Aires. To create our dataset for model training, we extracted characters from the deeds notarized by Don Nicolas de Baldibia y Brisuela who acted as interim notary while serving as alcalde ordinario (city councilman) in the city of Buenos Aires in 1658. 
@@ -92,16 +101,21 @@ Further execution instructions are available in this [Accessing-Docker-README.md
 
 ## Running on a local system
 
+If you wish to run the tool outside of the Docker image, that is, not using a Docker Image, please follow the steps mentioned in the README below.
+
 Clone this repository and make the changes in this [Accessing-Tool-Locally-README.md](/Search-Engine/README.md#accessing-the-tool-locally)
 
 ## Docker Desktop
+
+Using the available Docker Desktop application, you can also pull our Docker image and run our tool.
 
 Step 1: Install [Docker](https://docs.docker.com/get-docker/).
 
 Step 2: Start Docker Desktop.
 
 Step 3: Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under the repository 'shivikaprasannamu'. 
-As of 08/29/2022, the latest tag is of the name 'kgsar_v3'.
+As of 08/29/2022, the latest tag is of the name 'kgsar_v3' and this is a private image. You <u>will</u> be prompted for the password for the repository. Please contact Dr. Praveen Rao or Shivika Prasanna for this. 
+By default, you will be able to pull our public image named 'kgsar'. 
 
 Step 4: Hover over the image and click on 'PULL'.
 
@@ -110,6 +124,8 @@ Step 5: Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RU
 Step 6: Open your browser and type "http://localhost:5002". 
 
 ## Rebuilding a Docker image
+
+If you wish to create your own Docker image, please follow the following:
 
 Assuming you have cloned the directory and are inside the Search-Engine folder, create two folders for Images and Turtle files (outside the Root directory). Replace or add the turtle files and the images to their respective folders and run the following command from inside the current Search-Engine folder:
 
@@ -123,11 +139,13 @@ Once the docker image is built, you can push the image to your Docker repository
     $ docker push name_of_repository:tag_name
 ```
 
-You can also locally run this image using the following:
+You can also locally run this image using the following command:
 
 ```
-    $ docker run name_of_tag -p 5001:5001 -p 9999:9999 
+    $ docker run -p 5001:5001 -p 9999:9999 name_of_tag
 ```
+
+Note: <b>If you have not made any changes to the RWStoreProperties and run.sh files, you will be able to build and run your new image successfully. The files in this repository are by default set to running the image from Docker.</b>
 
 Taken from [Docker Documentation](https://docs.docker.com/engine/reference/commandline/image_build/). 
 

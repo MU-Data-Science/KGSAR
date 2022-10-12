@@ -54,8 +54,9 @@ Step 2: Once you are logged in, change the directory to "/mydata" and create a n
     $ cd /mydata
     $ mkdir kgsar_exp
 
-Step 3: Clone this repository.
+Step 3: Change to the directory and clone this repository.
 
+    $ cd kgsar_exp
     $ git clone https://github.com/MU-Data-Science/KGSAR.git
 
 Step 4: Create and activate a new Conda environment with Python version 3.7.3. This version is important as there are library dependencies.
@@ -67,6 +68,8 @@ Step 4: Create and activate a new Conda environment with Python version 3.7.3. T
     $ conda init
     $ cd kgsar_exp && conda create -n name_of_environment python=3.7.3
     $ conda activate name_of_environment
+
+Please note that sometimes you may be required to exit and SSH back into the session after conda init. You can exit the session by simply typing "exit" in the prompt.
 
 Step 5: Install all the required packages.
 
@@ -81,6 +84,10 @@ Step 5: Install all the required packages.
     $ pip3 install openpyxl
     $ pip3 install xlrd
     $ pip3 install --upgrade opencv-python==4.5.4.60
+
+If you wish to update your environment in case a package is failing, please use:
+
+    $ sudo apt-update 
 
 You are now ready to generate knowledge graphs by following the execution instructions in the [KG-Gen-README.md](/KG/README.md)!
 

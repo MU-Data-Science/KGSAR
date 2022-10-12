@@ -2,7 +2,15 @@
 
 # Description
 
-Generate knowledge graphs by utilizing Resource Description Framework (RDF) on cleaned, denoised images.
+Generate knowledge graphs by utilizing Resource Description Framework (RDF) on cleaned, denoised images. 
+
+If you want to transfer files between your Cloudlab node and your local system or vice-versa, please use the following:
+
+    $ scp -r src dest
+
+For example, if I wish to transfer files from my local system to Cloudlab:
+
+    $ scp -r /Desktop/folder Creator@Node.Cluster.cloudlab.us:/mydata/folder
 
 # Cleaning Images
 

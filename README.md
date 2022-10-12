@@ -45,6 +45,8 @@ Step 3: Choose a name for your experiment and number of nodes and click on "Next
 
 Your experiment will be ready in a few minutes!
 
+[Watch Video Here](/Video/starting-an-experiment.mov)
+
 ## Setting up Conda environment
 
 Step 1: Set a public and private key to be able to successfully SSH into the experiment. Once successful, SSH into the experiment from your terminal for MacOS users and Putty for Windows users. The SSH command is available in the "List View", under "SSH command".
@@ -85,11 +87,13 @@ Step 5: Install all the required packages.
     $ pip3 install xlrd
     $ pip3 install --upgrade opencv-python==4.5.4.60
 
-If you wish to update your environment in case a package is failing, please use:
+If you wish to update your environment in case a package is failing, please use the following and then re-run the failed package installation:
 
     $ sudo apt-update 
 
 You are now ready to generate knowledge graphs by following the execution instructions in the [KG-Gen-README.md](/KG/README.md)!
+
+<!-- [Watch Video Here](/Video/setting-up-conda-env) -->
 
 <b>NOTE:</b> The given instructions have been tested in an environment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
  

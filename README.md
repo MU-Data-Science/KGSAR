@@ -98,11 +98,13 @@ The knowledge graphs were then uploaded into Blazegraph using SPARQL queries. Th
 
 The system also allows users to annotate further on the result images. The user may choose to correct/update a word, add new labels in the image or simply delete an incorrect prediction. These are then emailed to us and this allows us to do further retraining on our models for better, more accurate predictions.
 
-There are multiple ways this tool can be accessed.
+There are multiple ways this tool can be accessed and it is not necessary to do this on Cloudlab. This can also be done on your local machine. The screenshots here are from running the following steps on the local machine's terminal/Docker Desktop.
 
 ## Docker Image
 1. Clone this repository and navigate to the 'Search Engine' [folder](/Search-Engine/).
-2. Run [run-kgsar.sh](/Search-Engine/run-kgsar.sh)
+![Search-Engine-Nav](/Screenshots/search-engine-nav.png)
+
+2. Run [run-kgsar.sh](/Search-Engine/run-kgsar.sh).
 
 Further execution instructions are available in this [Accessing-Docker-README.md](/Search-Engine/README.md#accessing-using-docker).
 
@@ -124,11 +126,24 @@ Step 3: Navigate to 'Images/REMOTE REPOSITORIES" and pull the latest image under
 As of 08/29/2022, the latest tag is of the name 'kgsar_v3' and this is a private image. You <u>will</u> be prompted for the password for the repository. Please contact Dr. Praveen Rao or Shivika Prasanna for this. 
 By default, you will be able to pull our public image named 'kgsar'. 
 
+![Docker-Desktop-Pull](/Screenshots/docker-desktop-pull-image.png)
+
 Step 4: Hover over the image and click on 'PULL'.
 
 Step 5: Navigate to 'Images/LOCAL', hover over the pulled image and click on 'RUN'. Under 'Container Ports', click on the plus sign and add '9999'.
 
+![Docker-Desktop-Run](/Screenshots/docker-desktop-run-image.png)
+
 Step 6: Open your browser and type "http://localhost:5002". 
+
+Screenshot of loading the files into Blazegraph:
+![Docker-Desktop-Blazegraph](/Screenshots/docker-desktop-blazegraph.png)
+
+Screenshot of all files loaded and ready to launch:
+![Docker-Desktop-Loaded](/Screenshots/docker-desktop-loaded.png)
+
+Screenshot of working tool using Docker Desktop:
+![Docker-Desktop-Success](/Screenshots/docker-desktop-successful.png)
 
 ## Rebuilding a Docker image
 

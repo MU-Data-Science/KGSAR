@@ -18,7 +18,7 @@ Make 3 directories, one for uncleaned-images, cleaned-images and JSON files:
     $ mkdir uncleaned-images
     $ mkdir cleaned-images
     $ mkdir JSON
-    $ mkdir/Keras
+    $ mkdir JSON/Keras
 
 Then, add all the uncleaned images to the 'uncleaned-images' folder.
 

@@ -11,9 +11,14 @@ To run our tool on your system, you can simply pull our docker image (latest: kg
     $ ./run-kgsar.sh
 ```
 
+![Search-Engine-Login](/Screenshots/search-engine-run-successful.png)
+![Search-Engine-Blazegraph](/Screenshots/search-engine-run-blazegraph.png)
+
 You will be prompted for the docker login credentials and your system password to enable mailing (this information is not stored anywhere). You will be required to have Docker Desktop installed on your system. The latest docker images contains a subset of 4 rollos and their corresponding knowledge graphs in turtle (.ttl) format.
 
 Please note that kgsar_v3 is a private Docker image and <u>will</u> require you to enter the password to the repository when prompted.
+
+![Search-Engine-Success](/Screenshots/search-engine-run-success.png)
 
 # Accessing the tool locally
 

@@ -22,7 +22,7 @@ Make 3 directories, one for uncleaned-images, cleaned-images and JSON files:
     $ mkdir JSON
     $ mkdir JSON/Keras
 
-![MKDIR](/Screenshots/gen-kg-mdkir.png)
+![MKDIR](/Screenshots/gen-kg-mkdir.png)
 
 Then, add all the uncleaned images to the 'uncleaned-images' folder.
 

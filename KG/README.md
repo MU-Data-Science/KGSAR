@@ -12,7 +12,7 @@ For example, if I wish to transfer files from my local system to Cloudlab:
 
     $ scp -r /Desktop/folder Creator@Node.Cluster.cloudlab.us:/mydata/folder
 
-<img src="Screenshots/gen-kg-scp" width="528" height="178"/>
+![DataTransfer](/Screenshots/gen-kg-scp.png)
 
 Make 3 directories, one for uncleaned-images, cleaned-images and JSON files:
 
@@ -22,7 +22,7 @@ Make 3 directories, one for uncleaned-images, cleaned-images and JSON files:
     $ mkdir JSON
     $ mkdir JSON/Keras
 
-<img src="Screenshots/gen-kg-mdkir" width="528" height="178"/>
+![MKDIR](/Screenshots/gen-kg-mdkir.png)
 
 Then, add all the uncleaned images to the 'uncleaned-images' folder.
 
@@ -50,7 +50,7 @@ To run as a standalone code, please uncomment lines 19-33 & 71 and run as follow
 
 If you are running this as a standalone code, it would mean that you already have cleaned images.
 
-<img src="KGSAR/Screenshots/gen-kg-clean-pred" width="528" height="178"/>
+![Cleaning-Prediction](/Screenshots/gen-kg-clean-pred.png)
 
 # Generating knowledge graphs
 
@@ -64,7 +64,7 @@ If the lines in the above two code files were not uncommented, kg.py will sequen
 
 If you are running this as a standalone code, it would mean that you already have the predictions from the cleaned images.
 
-<img src="Screenshots/gen-kg-completed" width="528" height="178"/>
+![KG-Completed](/Screenshots/gen-kg-completed.png)
 
 Note: If you get an error message like this: "ImportError: libGL.so.1: cannot open shared object file: No such file or directory" while running any of the above code, please run this (this is highly dependent on the Cloudlab node picked, and the order in which all the packages were installed):
 

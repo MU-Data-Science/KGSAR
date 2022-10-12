@@ -45,7 +45,7 @@ Step 3: Choose a name for your experiment and number of nodes and click on "Next
 
 Your experiment will be ready in a few minutes!
 
-[Watch Video Here](/Video/starting-an-experiment.mov)
+[Download and watch video here](/Video/starting-an-experiment.mov)
 
 ## Setting up Conda environment
 
@@ -93,7 +93,7 @@ If you wish to update your environment in case a package is failing, please use 
 
 You are now ready to generate knowledge graphs by following the execution instructions in the [KG-Gen-README.md](/KG/README.md)!
 
-<!-- [Watch Video Here](/Video/setting-up-conda-env) -->
+[Download and watch video here](/Video/setting-up-conda-env.mov)
 
 <b>NOTE:</b> The given instructions have been tested in an environment with Python version 3.7.3. If using any other Python versions, you may encounter version mismatch issues for other packages being used.
  

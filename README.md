@@ -127,7 +127,7 @@ Step 6: Open your browser and type "http://localhost:5002".
 
 If you wish to create your own Docker image, please follow the following:
 
-Assuming you have cloned the directory and are inside the Search-Engine folder, create two folders for Images and Turtle files (outside the Root directory). Replace or add the turtle files and the images to their respective folders and run the following command from inside the current Search-Engine folder:
+Assuming you have cloned the directory and are inside the Search-Engine folder, create two folders for Images and Turtle files (outside the Root directory). Replace or add the turtle files and the images to their respective folders, updates the path in Lines 23 and 24 (/subTurtles -> your turtles directory name) in the Dockerfile and run the following command from inside the current Search-Engine folder:
 
 ```
     $ docker build -t name_of_image .

@@ -149,11 +149,23 @@ Screenshot of working tool using Docker Desktop:
 
 If you wish to create your own Docker image, please follow the following:
 
-Assuming you have cloned the directory and are inside the Search-Engine folder, create two folders for Images and Turtle files (outside the Root directory). Replace or add the turtle files and the images to their respective folders, updates the path in Lines 23 and 24 (/subTurtles -> your turtles directory name) in the Dockerfile and run the following command from inside the current Search-Engine folder:
+Assuming you have cloned the directory and are inside the Search-Engine/Root folder, create two folders for Images and Turtle files (inside the Root directory). Replace or add the turtle files and the images to their respective folders, updates the path in Lines 23 and 24 (/subTurtles -> your turtles directory name) in the Dockerfile and run the following command from inside the current Search-Engine/Root folder:
+
+![Rebuilding-docker-mkdir](/Screenshots/rebuild-docker-mkdir.png)
+
+Note how we are copying contents of our local directories to our Docker image in our DockerFile:
+
+![Rebuilding-docker-dockerfile-changes](/Screenshots/rebuilding-docker-dockerfile-changes.png)
 
 ```
     $ docker build -t name_of_image .
 ```
+
+![Rebuilding-docker-build](/Screenshots/rebuilding-docker-build.png)
+
+Here is our new image (ignore the date created as when creating a new image that is effectively identical to an existing image layer, docker images shows the new image as having the same CREATED date as the existing image layer):
+
+![Rebuilding-docker-ls](/Screenshots/rebuilding-docker-image-ls.png)
 
 Once the docker image is built, you can push the image to your Docker repository using the following:
 
@@ -166,6 +178,10 @@ You can also locally run this image using the following command:
 ```
     $ docker run -p 5001:5001 -p 9999:9999 name_of_tag
 ```
+
+![Rebuilding-docker-run](/Screenshots/rebuilding-docker-run.png)
+
+Open your browser and type localhost:5001/load (assuming our port number is 5001) to load all the turtle files into Blazegraph. Check your terminal to see if all the files have been loaded. You should see "Completed loading ttls!" message.
 
 Note: <b>If you have not made any changes to the RWStoreProperties and run.sh files, you will be able to build and run your new image successfully. The files in this repository are by default set to running the image from Docker.</b>
 

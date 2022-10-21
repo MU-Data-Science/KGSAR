@@ -5,10 +5,14 @@
 KGSAR stands for Knowledge Graphs for Spanish-American notary Records and is a tool that performs information retrieval, given a search word, and allows users to annotate to add, update, or delete more words while searching. These annotated words are then utilized for further model retraining. 
 
 # Accessing using Docker
-To run our tool on your system, you can simply pull our docker image (latest: kgsar_v3) by running the following script in your terminal.
+To run our tool on your system, you can simply pull our docker image (latest: kgsar_v3 (private) or kgsar_subset_iswc (public)) by running the following script in your terminal.
 
 ```
-    $ ./run-kgsar.sh
+    $ ./run-kgsar-public.sh
+```
+OR
+```
+    $ ./run-kgsar-private.sh
 ```
 
 ![Search-Engine-Login](/Screenshots/search-engine-run-successful.png)

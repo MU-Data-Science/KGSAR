@@ -1,0 +1,125 @@
+h1 { 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.399999618530273px; 
+} 
+
+.h3-div-specs {
+    text-align: center;
+    font-size: 28px;
+}
+
+h5, h4, .card-text { 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p, ul, li { 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    text-align: justify;
+}
+
+body {
+    background-image: url("../docs/static/main-background.png");
+    backdrop-filter: blur(15px); 
+   }
+
+.card {
+    margin-bottom: 10px;
+}
+
+#first {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#second {
+    padding-top: 20px;
+    padding-right: 100px;
+    float: right;
+    width: 50%;
+    height: 50%;
+}
+
+#third {
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: left center; 
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+#fourth {
+    float: right;
+    padding-right: 20px;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+}
+
+#fifth {
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: left center; 
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#grantLang-div {
+    align-self: center;
+    text-align: center;
+    width: 688px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#img-div {
+    align-self: center;
+}
+
+#img-id {
+    width: 170px;
+    height: 75px;
+    align-self: center;
+}
+
+.imageColumn {
+    float: left;
+    padding: 10px;
+}
+
+#img-div2 {
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+#img-id2 {
+    width: 360px;
+    height: 75px;
+    align-self: center;
+}
+
+.imageColumn2 {
+    float: center;
+    padding: 10px;
+    align-self: center;
+}
+
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

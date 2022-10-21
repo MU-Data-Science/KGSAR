@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>KGSAR-Keyboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="prefetch" href="../font/NicolasDeValdiviaYBrizuela-Regular.ttf" as="font"/>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+</head>
+<body>
+  <!-- <div class="header-logo">
+    <a href="https://sites.google.com/view/kg-spanish-american-notary/home"><img src="https://lh3.googleusercontent.com/n5ujrS5KsryfKB1EuwP73hctdbM6FdjQ9GUChCLASsjputyJTKxAco_q18x8A8LQRcwY3JQ=w16383" class="pagelogo" role="img" aria-label="Site home"></a>
+    <span class="header-text">KGSAR</span>
+  </div>
+  <div class="header-bkg">
+  </div> -->
+  <div id="flex">
+    <div class="aboutkeyboard">
+      <h4> About our Keyboard </h4><br/>
+      <p>Our dataset was created by extracting the characters from the deeds notarized by Don Nicolas de Baldibia y Brisuela who acted as interim notary while serving as alcalde ordinario (city councilman) in the city of Buenos Aires in 1658. In Buenos Aires, the office of the public notary was frequently vacant and it was common to appoint alcaldes ordinarios to serve as interims. The high turn-over rate in the office made this collection of notary records unique as it compiles many different writing styles.</p>
+      <br/>
+      <p>We used the characters from our dataset to create this virtual keyboard. In the seventeenth century, the “v” and “u” were interchangeable. Thus, on the keyboard those characters are the same. The “w” was not used in seventeenth-century Spanish. We created our own “w” to add to the keyboard by merging two “u”. The “k” was rarely used and so we created one for this keyboard as well. Additionally, we incorporated the @ and # signs, an ornamental doodle used to embellish signatures, and the signature of our notary, Don Nicholas de Baldibia y Brisuela. Click the shift key to discover these symbols.
+      </p>
+      <br/>
+      <p>Download the font from <a href="https://github.com/MU-Data-Science/KGSAR/blob/main/font/NicolasDeValdiviaYBrizuela-Regular.ttf">here</a>.</p>
+    </div>
+
+    <div id="container" class="harlow">
+      <textarea id="write" spellcheck="false"></textarea>
+      <ul id="keyboard">
+        <li class="symbol"><span class="off">`</style></span><span class="on">~</span></li>
+        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+        <li class="tab">tab</li>
+        <li class="letter">q</li>
+        <li class="letter">w</li>
+        <li class="letter">e</li>
+        <li class="letter">r</li>
+        <li class="letter">t</li>
+        <li class="letter">y</li>
+        <li class="letter">u</li>
+        <li class="letter">i</li>
+        <li class="letter">o</li>
+        <li class="letter">p</li>
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+          <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+          <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+          <!-- <li class="capslock">caps lock</li> -->
+        <li class="letter">a</li>
+        <li class="letter">s</li>
+        <li class="letter">d</li>
+        <li class="letter">f</li>
+        <li class="letter">g</li>
+        <li class="letter">h</li>
+        <li class="letter">j</li>
+        <li class="letter">k</li>
+        <li class="letter">l</li>
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li class="return lastitem">return</li>
+        <li class="delete lastitem">delete</li>
+        <li class="left-shift">shift</li>
+        <li class="letter">z</li>
+        <li class="letter">x</li>
+        <li class="letter">c</li>
+        <li class="letter">v</li>
+        <li class="letter">b</li>
+        <li class="letter">n</li>
+        <li class="letter">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li class="right-shift lastitem">shift</li>
+        <li class="space lastitem">&nbsp;space</li>
+        <button type="button" id="download" class="button-download" onclick="generate()" title="Download as .docx"><i class="fa fa-download"></i></button>
+      </ul>
+    </div>
+
+    <div class="aboutnotary">
+      <h4> About our Notary </h4><br/>
+      <p><img src="docs/static/signature-dl.png" id="notary-signature" alt="Signature of Don Nicolas de Baldibia y Brisuela">Don Nicolas de Baldibia y Brisuela was born in Concepción de Chile in 1603. Before moving to Buenos Aires, he served as teniente de gobernardor in Chile and held the same office in Cordoba del Tucuman in 1638. The following year he was appointed as tesorero (treasurer) de la Real Hacienda in Cordoba. It is not known when he moved to Buenos Aires but he appeared serving as alcalde ordinario in 1650 and, for a second term, in 1658. In 1651, Governor Jacinto de Lariz granted him an encomienda over the Ohomas natives. However, in 1662, the crown refused to confirm this concession and, presumably, it changed hands. In his youth, Don Nicolas was known for his addiction to gambling and, in 1635, he publicly renounced this vice. He married Doña Maria de Peñalva y Angulo and had five legitimate children: Elena, Agueda, Pedro, Alejo, and Andres.</p>
+      <br/>
+    </div>
+
+    <div id="grantLang-div" class="grantLang">
+      This work was supported by the National Endowment for the Humanities under Grant No. <a href="https://securegrants.neh.gov/publicquery/main.aspx?f=1&gn=HAA-271747-20" target="_blank">HAA-271747-20</a>.
+    </div>
+
+    <div id="img-div">
+      <div class="imageColumn">
+        <img id="img-id" src='logos/NEH-Preferred-Seal820.jpg' alt="NEH" title="National Endowment For The Humanities">
+      </div>
+      <div class="imageColumn">
+        <img id="img-id" src='logos/UMKC.jpg' alt="UMKC" title="University of Missouri - Kansas City">
+      </div>
+      <div class="imageColumn">
+        <img id="img-id" src='logos/UM.png' alt="Mizzou" title="University of Missouri - Columbia">
+      </div>
+      <div class="imageColumn">
+        <img id="img-id" src='logos/Logo-Ravignani-2020.jpg' alt="Instituto De Historia Argentina Y Americana" title = "Instituto De Historia Argentina Y Americana - Dr. Emilio Ravignani">
+      </div>
+    </div>
+    <div id="img-div2">
+      <div class="imageColumn2">
+        <img id="img-id2" src='logos/Archivo General  de la Nacion-BW.jpg' alt="Archivo General  de la Nacion" title = "Archivo General  de la Nacion">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://unpkg.com/docx@5.0.2/build/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+  <script type="text/javascript" src="js/keyboard.js"></script>
+</body>
+</html>

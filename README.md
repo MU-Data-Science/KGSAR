@@ -171,10 +171,11 @@ Here is our new image (ignore the date created as when creating a new image that
 
 ![Rebuilding-docker-ls](/Screenshots/rebuilding-docker-image-ls.png)
 
-Once the docker image is built, you can push the image to your Docker repository using the following:
+Once the docker image is built, commit the docker container ID using "docker container ls", you can push the image to your Docker repository using the following:
 
 ```
-    $ docker push name_of_repository:tag_name
+    $ docker image tag name_of_image:tag name_of_repository/name_of_image:tag_name
+    $ docker push name_of_repository/name_of_image:tag_name
 ```
 
 You can also locally run this image using the following command:

@@ -209,7 +209,7 @@ To verify, in your Font Book, find and ensure the tick box is highlighted in blu
 ![](docs/static/verify.png)  
 
 ## Accessing the Keyboard
-You can directly access the keyboard using this [link](https://mu-data-science.github.io/KGSAR/). However, to see the font locally in your system after downloading your file from the notepad attached to the keyboard, please install the font as described in the above section.
+You can directly access the keyboard using this [link](https://mu-data-science.github.io/KGSAR/keyboard.html). However, to see the font locally in your system after downloading your file from the notepad attached to the keyboard, please install the font as described in the above section.
 
 # Team
 Faculty - Dr. Praveen Rao (Co-PI, MU), Dr. Viviana Grieco (PI, UMKC)

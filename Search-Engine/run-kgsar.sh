@@ -15,6 +15,6 @@ echo "Starting SMTP.."
 echo "Please enter the password you use to log into your machine."
 sudo postfix start
 echo "Pulling image from Docker"
-docker pull shivikaprasannamu/kgsar-private:kgsar_v3
+docker pull shivikaprasannamu/kgsar_subset_iswc
 echo "Running container inside image"
-docker run -p 5001:5001 -p 9999:9999 shivikaprasannamu/kgsar-private:kgsar_v3
+docker run -p 5001:5001 -p 9999:9999 shivikaprasannamu/kgsar_subset_iswc:latest
